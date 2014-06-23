@@ -4,7 +4,7 @@
 # http://docs.aws.amazon.com/AWSEC2/latest/CommandLineReference/set-up-ec2-cli-linux.html#setting_up_ec2_command_linux
 
 export EC2_HOME='/usr/local/ec2/api'
-export JAVA_HOME='/Library/Java/JavaVirtualMachines/jdk1.8.0_05.jdk/Contents/Home'
+export JAVA_HOME='/usr/libexec/java_home'
 export PATH=$PATH:$EC2_HOME/bin
 export AWS_ACCESS_KEY='<Input IAM AWS Access Key>'
 export AWS_SECRET_KEY='<Input IAM AWS Secret Key>'
