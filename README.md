@@ -13,3 +13,6 @@ Unfortunately there are lots of variables that you will need to specificy in ord
 4. Update variables for your particular environment. EC2_HOME, JAVA_HOME, AWS_ACCESS_KEY, AWS_SECRET_KEY, LIST_FILE, userlogin, and region
 5. Make the file executable.
 6. Try it out! When the list of servers is displayed just type in the number of the server desired then hit Enter.
+
+## Notes
+The server names are pulled from the EC2 "Name" tag.
