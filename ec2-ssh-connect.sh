@@ -14,7 +14,7 @@ userlogin="<your username>"
 region="<desired region>"
 
 # Update path as appropriate or wherever you desire.
-LIST_FILE="/Users/$userlogin/.servers_cache.txt"
+LIST_FILE="$HOME/.servers_cache.txt"
 
 # If the server list cache doesn't exist, create it. If older than a day, update it. Otherwise continue.
 
