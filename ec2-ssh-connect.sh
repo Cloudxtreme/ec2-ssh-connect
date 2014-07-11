@@ -42,7 +42,12 @@ instance_array=()
 for ip in $(echo $IP_LIST); do
   instance=$(grep -w $ip $LIST_FILE | grep "INSTANCE" | awk '{print $2}')
   tagname=$(grep $instance $LIST_FILE | grep "TAG" | grep "Name" | awk '{print $5 $6 $7 $8 $9}')
-  instance_array[$n]="$tagname $ip"
+  stopped=$(grep $instance $LIST_FILE | grep "stopped")
+  if [[ -n $stopped ]]; then
+	  instance_array[$n]="$tagname $ip --Powered Off--"
+  else
+	  instance_array[$n]="$tagname $ip"
+  fi
   ((++n))
 done
 
